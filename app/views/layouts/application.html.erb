@@ -12,12 +12,12 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <nav class="navbar navbar-dark" style="background-color: #e3f2fd;">
       <ul class="list-inline">
         <li><%= link_to 'See all restaurants', restaurants_path %></li>
         <li><%= link_to 'Add a restaurant', new_restaurant_path %></li>
       </ul>
-    </div>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>

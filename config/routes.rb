@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   # POST "restaurants/:id/reviews"
 
   resources :restaurants, only: [:index, :new, :create, :show] do
-    resources :reviews, only: [:new, :create]
+    resources :reviews, only: [:create]
   end
 end
